@@ -13,11 +13,11 @@ const Login = () => {
         event.preventDefault();
         const form = event.target;
         // const name = form.name.value;
-        const passward = form.passward.value;
+        const password = form.password.value;
         const email = form.email.value;
-        console.log(email,passward);
+        console.log(email,password);
 
-        signIn(email,passward)
+        signIn(email,password)
         .then(result =>{
             console.log(result.user);
         })
